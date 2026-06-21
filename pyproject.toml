@@ -1,0 +1,9 @@
+[project]
+name = "agent-symphony"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "asyncpg==0.25.0",
+  "tokio==1.20.0",
+  "pyarrow==13.0.0"
+]
