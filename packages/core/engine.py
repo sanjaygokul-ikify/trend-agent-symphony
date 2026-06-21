@@ -37,7 +37,7 @@ class Engine:
 
     def get_event_sourcing(self, agent_id: str) -> List[Event]:
         try:
-            return self.event_sourcing.get(agent_id, [])
+            return [self.event_sourcing.get(agent_id)]
         except Exception as e:
             logger.error(f'Error retrieving event sourcing: {e}')
             raise EventSourcingError('Failed to retrieve event sourcing')
