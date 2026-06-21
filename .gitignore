@@ -1,0 +1,1 @@
+**/logs\n**/tmp\n.DS_Store\n.env\n__pycache__\n*.md\n*.lock\nmigrations/\nwasm32-unknown-unknown/
