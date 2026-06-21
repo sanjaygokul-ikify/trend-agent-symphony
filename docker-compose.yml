@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  agent-symphony:
+    image: agent-symphony
+    ports:
+      - "8080:80"
+    environment:
+      MEMORY_BACKEND: redis
+      METRICS_PORT: 9090
+    volumes:
+      - storage:/data
+volumes:
+  storage:
