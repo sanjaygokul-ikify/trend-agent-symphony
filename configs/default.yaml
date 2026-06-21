@@ -1,0 +1,12 @@
+orchestrator:
+  port: 8080
+  max_concurrent_agents: 128
+memory:
+  redis_url: redis://localhost:6379
+  retention_policy: 30d
+  compression: lz4
+auth:
+  jwt_secret: generated-secret
+metrics:
+  enabled: true
+  prometheus_endpoint: /metrics
